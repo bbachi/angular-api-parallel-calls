@@ -1,0 +1,5 @@
+<app-header></app-header>
+<app-loader *ngIf="users && users.length == 0"></app-loader>
+<app-user *ngIf="users && users.length > 0"
+[users]="users"
+></app-user>
